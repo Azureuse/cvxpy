@@ -184,12 +184,12 @@ class MOSEK(ConicSolver):
         rows = cols = constr.expr.shape[0]
         entries = rows * (cols + 1)//2
 
-        row_arr = np.arange(0, entries)
+        row_arr = np.arange(0, entries, dtype=np.int32)
 
         lower_diag_indices = np.tril_indices(rows)
         col_arr = np.sort(np.ravel_multi_index(lower_diag_indices,
                                                (rows, cols),
-                                               order='F'))
+                                               order='F')).astype(np.int32, copy=False)
 
         val_arr = np.zeros((rows, cols))
         val_arr[lower_diag_indices] = 1
@@ -200,7 +200,7 @@ class MOSEK(ConicSolver):
         shape = (entries, rows*cols)
         scaled_lower_tri = sp.sparse.csc_array((val_arr, (row_arr, col_arr)), shape)
 
-        idx = np.arange(rows * cols)
+        idx = np.arange(rows * cols, dtype=np.int32)
         val_symm = 0.5 * np.ones(2 * rows * cols)
         K = idx.reshape((rows, cols))
         row_symm = np.append(idx, np.ravel(K, order='F'))
