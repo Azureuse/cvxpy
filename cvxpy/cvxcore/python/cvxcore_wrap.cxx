@@ -3168,8 +3168,8 @@ SWIG_Python_NonDynamicSetAttr(PyObject *obj, PyObject *name, PyObject *value) {
 #define SWIGTYPE_p_char swig_types[7]
 #define SWIGTYPE_p_difference_type swig_types[8]
 #define SWIGTYPE_p_double swig_types[9]
-#define SWIGTYPE_p_int swig_types[10]
-#define SWIGTYPE_p_key_type swig_types[11]
+#define SWIGTYPE_p_key_type swig_types[10]
+#define SWIGTYPE_p_long swig_types[11]
 #define SWIGTYPE_p_mapped_type swig_types[12]
 #define SWIGTYPE_p_operatortype swig_types[13]
 #define SWIGTYPE_p_p_PyObject swig_types[14]
@@ -8464,7 +8464,7 @@ fail:
 SWIGINTERN PyObject *_wrap_ProblemData_getI(PyObject *self, PyObject *args) {
   PyObject *resultobj = 0;
   ProblemData *arg1 = (ProblemData *) 0 ;
-  int *arg2 = (int *) 0 ;
+  long *arg2 = (long *) 0 ;
   int arg3 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
@@ -8509,7 +8509,7 @@ fail:
 SWIGINTERN PyObject *_wrap_ProblemData_getJ(PyObject *self, PyObject *args) {
   PyObject *resultobj = 0;
   ProblemData *arg1 = (ProblemData *) 0 ;
-  int *arg2 = (int *) 0 ;
+  long *arg2 = (long *) 0 ;
   int arg3 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
@@ -21532,8 +21532,8 @@ static swig_type_info _swigt__p_allocator_type = {"_p_allocator_type", "allocato
 static swig_type_info _swigt__p_char = {"_p_char", "char *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_difference_type = {"_p_difference_type", "difference_type *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_double = {"_p_double", "double *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_int = {"_p_int", "int *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_key_type = {"_p_key_type", "key_type *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_long = {"_p_long", "long *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_mapped_type = {"_p_mapped_type", "mapped_type *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_operatortype = {"_p_operatortype", "OperatorType *|enum operatortype *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_p_PyObject = {"_p_p_PyObject", "PyObject **", 0, 0, (void*)0, 0};
@@ -21573,8 +21573,8 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_char,
   &_swigt__p_difference_type,
   &_swigt__p_double,
-  &_swigt__p_int,
   &_swigt__p_key_type,
+  &_swigt__p_long,
   &_swigt__p_mapped_type,
   &_swigt__p_operatortype,
   &_swigt__p_p_PyObject,
@@ -21614,8 +21614,8 @@ static swig_cast_info _swigc__p_allocator_type[] = {  {&_swigt__p_allocator_type
 static swig_cast_info _swigc__p_char[] = {  {&_swigt__p_char, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_difference_type[] = {  {&_swigt__p_difference_type, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_double[] = {  {&_swigt__p_double, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_int[] = {  {&_swigt__p_int, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_key_type[] = {  {&_swigt__p_key_type, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_long[] = {  {&_swigt__p_long, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_mapped_type[] = {  {&_swigt__p_mapped_type, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_operatortype[] = {  {&_swigt__p_operatortype, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_p_PyObject[] = {  {&_swigt__p_p_PyObject, 0, 0, 0},{0, 0, 0, 0}};
@@ -21655,8 +21655,8 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_char,
   _swigc__p_difference_type,
   _swigc__p_double,
-  _swigc__p_int,
   _swigc__p_key_type,
+  _swigc__p_long,
   _swigc__p_mapped_type,
   _swigc__p_operatortype,
   _swigc__p_p_PyObject,
