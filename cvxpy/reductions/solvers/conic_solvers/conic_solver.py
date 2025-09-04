@@ -153,9 +153,9 @@ class ConicSolver(Solver):
         num_values = num_blocks * streak
         val_arr = np.ones(num_values, dtype=np.float64)
         streak_plus_spacing = streak + spacing
-        row_arr = np.arange(0, num_blocks * streak_plus_spacing, dtype=np.int32).reshape(
+        row_arr = np.arange(0, num_blocks * streak_plus_spacing).reshape(
             num_blocks, streak_plus_spacing)[:, :streak].flatten() + offset
-        col_arr = np.arange(num_values, dtype=np.int32)
+        col_arr = np.arange(num_values)
         return sp.csc_array((val_arr, (row_arr, col_arr)), shape)
 
     @staticmethod

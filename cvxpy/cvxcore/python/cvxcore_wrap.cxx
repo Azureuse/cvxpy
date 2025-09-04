@@ -8491,9 +8491,9 @@ SWIGINTERN PyObject *_wrap_ProblemData_getI(PyObject *self, PyObject *args) {
     arg3 = (int) PyLong_AsSsize_t(swig_obj[1]);
     if (arg3 == -1 && PyErr_Occurred()) SWIG_fail;
     dims[0] = (npy_intp) arg3;
-    array2 = PyArray_SimpleNew(1, dims, NPY_INT);
+    array2 = PyArray_SimpleNew(1, dims, NPY_LONG);
     if (!array2) SWIG_fail;
-    arg2 = (int*) array_data(array2);
+    arg2 = (long*) array_data(array2);
   }
   (arg1)->getI(arg2,arg3);
   resultobj = SWIG_Py_Void();
@@ -8536,9 +8536,9 @@ SWIGINTERN PyObject *_wrap_ProblemData_getJ(PyObject *self, PyObject *args) {
     arg3 = (int) PyLong_AsSsize_t(swig_obj[1]);
     if (arg3 == -1 && PyErr_Occurred()) SWIG_fail;
     dims[0] = (npy_intp) arg3;
-    array2 = PyArray_SimpleNew(1, dims, NPY_INT);
+    array2 = PyArray_SimpleNew(1, dims, NPY_LONG);
     if (!array2) SWIG_fail;
-    arg2 = (int*) array_data(array2);
+    arg2 = (long*) array_data(array2);
   }
   (arg1)->getJ(arg2,arg3);
   resultobj = SWIG_Py_Void();
